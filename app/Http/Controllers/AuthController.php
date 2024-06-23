@@ -34,11 +34,12 @@ class AuthController extends Controller
         ");
 
         return
-            view('auth.header', $data) .
-            view('auth.login', $data) .
-            view('auth.footer', $data);
+            view('template_admin.header', $data) .
+            view('template_admin.sidebar', $data) .
+            // view('auth.login', $data) .
+            view('template_admin.dashboard') ;
+            // view('auth.footer', $data);
             // view('template_main.header', $data) .
-            // view('template_main.dashboard', $data) .
             // view('template_main.footer');
     }
 
